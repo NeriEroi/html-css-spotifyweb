@@ -103,6 +103,20 @@ nav ul li span {
     display: inline-block;
 }
 
+nav ul li span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+nav ul li #home {
+    color: white;
+}
+
+nav ul li #home:hover {
+    color: white;
+    cursor: pointer;
+}
+
 /* / nav one */
 
 /* nav two */
@@ -117,6 +131,7 @@ nav:nth-of-type(2) ul li {
 }
 
 nav:nth-of-type(2) ul li span h3 {
+    color: white;
     font-family: sans-serif;
 }
 
@@ -191,6 +206,17 @@ hr {
 .low-column .profile {
     padding-top: 10px;
     margin-left: 25px;
+}
+
+.low-column .profile span {
+    color: white;
+    font-weight: 900;
+}
+
+.low-column .download span:hover,
+.low-column .profile span:hover {
+    color: white;
+    cursor: pointer;
 }
 
 /* / low column */
