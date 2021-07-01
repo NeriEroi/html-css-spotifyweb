@@ -58,6 +58,17 @@ body {
 /* / spotify logo */
 
 
+
+/* navs COMMON */
+
+nav,
+nav:nth-of-type(2) {
+    font-size: 15px;
+}
+
+/* navs COMMON */
+
+
 /* nav one */
 
 nav ul {
@@ -87,3 +98,34 @@ nav ul li span {
     font-weight: 900;
     display: inline-block;
 }
+
+/* / nav one */
+
+
+/* nav two */
+
+nav:nth-of-type(2) li:first-child {
+    padding-top: 25px;
+}
+
+nav:nth-of-type(2) ul li {
+    margin-left: 12px;
+    padding: 10px;
+}
+
+nav:nth-of-type(2) ul li span h3 {
+    font-family: sans-serif;
+}
+
+nav:nth-of-type(2) ul li .nav-img-cont i {
+    color: lightgray;
+    font-size: 35px;
+}
+
+nav:nth-of-type(2) ul li .nav-img-cont {
+    margin-left: 5px;
+}
+
+/* nav two */
+
+
