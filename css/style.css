@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container .spotify-col {
+    width: calc(100vw - 85%);
+    height: calc(100vh - 125px);
+    background-color: orangered;
+    position: fixed;
+}
+
+.container main {
+    height: calc(100vh - 125px);
+    background-color: greenyellow;
+}
+
+.container footer {
+    height: 125px;
+    background-color: rgba(199, 22, 140, 0.568);
+}
