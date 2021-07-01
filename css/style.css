@@ -19,7 +19,6 @@ body {
     width: calc(100vw - 83%);
     height: calc(100vh - 125px);
     position: fixed;
-    border: 3px solid black;
 }
 
 .container main {
@@ -48,6 +47,7 @@ body {
 
 .spotify-col .logo {
     width: 65%;
+    padding-top: 20px;
     margin-left: 20px;
 }
 
@@ -58,6 +58,7 @@ body {
 /* / spotify logo */
 
 
+/* navs */
 
 /* navs COMMON */
 
@@ -68,11 +69,14 @@ nav:nth-of-type(2) {
 
 /* navs COMMON */
 
-
 /* nav one */
 
 nav ul {
     background-color: #010101;
+}
+
+nav ul li:first-child {
+    padding-top: 8px;
 }
 
 nav ul li {
@@ -101,7 +105,6 @@ nav ul li span {
 
 /* / nav one */
 
-
 /* nav two */
 
 nav:nth-of-type(2) li:first-child {
@@ -129,3 +132,67 @@ nav:nth-of-type(2) ul li .nav-img-cont {
 /* nav two */
 
 
+/* low column */
+
+.low-column {
+    color: lightgray;
+    background-color: #010101;
+    padding-top: 73px;
+}
+
+.low-column .download .download-cont {
+    width: 20px;
+}
+
+.low-column .download .download-cont img {
+    width: 100%;
+}
+
+.low-column .download .download-cont,
+.low-column .download span {
+    display: inline-block;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+}
+
+.low-column .profile .profile-cont {
+    width: 20px;
+}
+
+.low-column .profile .profile-cont img {
+    width: 100%;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.low-column .profile .profile-cont,
+.low-column .profile span {
+    display: inline-block;
+}
+
+/* low column COMMON */
+
+.low-column .download span,
+.low-column .profile span {
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+
+/* / low column COMMON */
+
+.low-column .download {
+    padding-top: 10px;
+    margin-left: 22px;
+}
+
+.low-column .profile {
+    padding-top: 10px;
+    margin-left: 25px;
+}
+
+/* / low column */
+
+/* / spotify column */
