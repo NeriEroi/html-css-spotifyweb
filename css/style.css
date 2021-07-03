@@ -213,6 +213,20 @@ hr {
     justify-content: center;
     align-items: center;
     color: lightgrey;
+    position: relative;
+}
+
+#nav-albums ul li .green-line {
+    width: 30px;
+    height: 2px;
+    background-color: #73D601;
+    position: absolute;
+    bottom: 20px;
+    display: none;
+}
+
+#nav-albums ul li:hover .green-line {
+    display: block;
 }
 
 /* / NAV ALBUMS */
