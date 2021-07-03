@@ -4,236 +4,299 @@
     box-sizing: border-box;
 }
 
-/* GENERAL */
-
 body {
     font-family: 'Varela Round', sans-serif;
 }
 
+/* STRUCTURE */
+
 .container {
     width: 100vw;
     height: 100vh;
+    background-color: lightgreen;
+    position: relative;
 }
 
-.container .spotify-col {
-    width: calc(100% - 83%);
-    height: calc(100% - 125px);
+.column-spotify {
+    width: 270px;
+    height: calc(100vh - 125px);
+    background-color: #000000;
+    float: left;
     position: fixed;
+}
+
+.albums-cont {
+    width: calc(100vw - 270px);
+    height: calc(100vh - 125px);
+    background-color: #323D4F;
+    float: right;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.container main {
-    height: calc(100% - 125px);
-    background-color: greenyellow;
-    overflow-y: scroll;
-}
-
-@media screen and (max-width: 1059px) {
-    .container .spotify-col {
-        width: 200px;
-    }
-}
-
-.container footer {
+footer {
     width: 100%;
     height: 125px;
-    background-color: #282828;
+    background-color: yellow;
+    position: absolute;
+    top: calc(100vh - 125px);
+    left: 0;
     position: fixed;
 }
 
-/* / GENERAL */
+/*  /STRUCTURE */
 
 
 /* SPOTIFY COLUMN */
 
-/* spotify logo */
-
-.spotify-col .logo-row {
-    height: 100px;
-    background-color: #010101;
+.logo {
+    width: 180px;
+    height: 75px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
-.spotify-col .logo {
-    width: 65%;
-    padding-top: 20px;
-    margin-left: 20px;
-}
-
-.spotify-col .logo img {
+.logo img {
     width: 100%;
 }
 
-/* / spotify logo */
-
-
-/* navs */
-
-/* navs COMMON */
-
-nav,
-nav:nth-of-type(2) {
-    font-size: 15px;
+#nav-column ul {
+    margin-left: 10px;
 }
 
-/* / navs COMMON */
-
-/* nav one */
-
-nav ul {
-    background-color: #010101;
+#nav-column h3 {
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
-nav ul #lime-home {
-    border-left: 3px solid lime;
+#nav-column ul:nth-of-type(2) li {
+    line-height: 30px;
 }
 
-nav ul li:first-child {
-    padding-top: 8px;
+#nav-column ul:nth-of-type(2) li:first-child {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
-nav ul li {
-    padding: 5px;
+#nav-column ul:nth-of-type(2) li:first-child i {
+    font-size: 40px;
+}
+
+#nav-column ul:nth-of-type(2) li:first-child span {
+    margin-left: 10px;
+}
+
+#nav-column ul li {
     display: flex;
     align-items: center;
+    color: lightgrey;
 }
 
-nav ul li .nav-img-cont {
-    width: 35px;
-    height: 35px;
-    margin-left: 20px;
-    display: inline-block;
-}
-
-nav ul li .nav-img-cont img {
-    width: 100%;
-}
-
-nav ul li span {
-    padding-left: 5px;
-    color: lightgray;
-    font-weight: 900;
-    display: inline-block;
-}
-
-nav ul li span:hover {
-    color: white;
-    cursor: pointer;
-}
-
-nav ul li #home {
-    color: white;
-}
-
-nav ul li #home:hover {
-    color: white;
-    cursor: pointer;
-}
-
-/* / nav one */
-
-/* nav two */
-
-nav:nth-of-type(2) li:first-child {
-    padding-top: 25px;
-}
-
-nav:nth-of-type(2) ul li {
-    margin-left: 12px;
-    padding: 10px;
-}
-
-nav:nth-of-type(2) ul li span h3 {
-    color: white;
-    font-family: sans-serif;
-}
-
-nav:nth-of-type(2) ul li .nav-img-cont i {
-    color: lightgray;
-    font-size: 35px;
-}
-
-nav:nth-of-type(2) ul li .nav-img-cont {
+#nav-column ul li span {
     margin-left: 5px;
 }
 
-/* nav two */
-
-
-/* low column */
-
-.low-column {
-    color: lightgray;
-    background-color: #010101;
-    padding-top: 73px;
+#nav-column ul li .icon-cont {
+    width: 30px;
 }
 
-.low-column .download .download-cont {
-    width: 20px;
-}
-
-.low-column .download .download-cont img {
+#nav-column ul li .icon-cont img {
     width: 100%;
 }
 
-.low-column .download .download-cont,
-.low-column .download span {
-    display: inline-block;
+/* column footer */
+
+#nav-column .column-footer {
+    margin-top: 220px;
+    margin-left: 10px;
+}
+
+#nav-column .column-footer .install {
+    height: 35px;
+    display: flex;
+}
+
+#nav-column .column-footer .logo-footer {
+    width: 30px;
+}
+
+#nav-column .column-footer .logo-footer img {
+    width: 100%;
+}
+
+#nav-column .column-footer .install p {
+    margin-left: 10px;
 }
 
 hr {
-    width: 85%;
-    margin: auto;
+    width: 80%;
+    margin-left: 5px;
 }
 
-.low-column .profile .profile-cont {
+#nav-column .column-footer .doe {
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 5px;
+    display: flex;
+}
+
+#nav-column .column-footer .logo-footer-doe {
     width: 20px;
 }
 
-.low-column .profile .profile-cont img {
+#nav-column .column-footer .logo-footer-doe img {
     width: 100%;
-    background-color: grey;
-    border-radius: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
 }
 
-.low-column .profile .profile-cont,
-.low-column .profile span {
-    display: inline-block;
+#nav-column .column-footer .doe p {
+    margin-left: 10px;
 }
 
-/* low column COMMON */
-
-.low-column .download span,
-.low-column .profile span {
-    padding-bottom: 10px;
-    vertical-align: middle;
-}
-
-/* / low column COMMON */
-
-.low-column .download {
-    padding-top: 10px;
-    margin-left: 22px;
-}
-
-.low-column .profile {
-    padding-top: 10px;
-    margin-left: 25px;
-}
-
-.low-column .profile span {
-    color: white;
-    font-weight: 900;
-}
-
-.low-column .download span:hover,
-.low-column .profile span:hover {
-    color: white;
-    cursor: pointer;
-}
-
-/* / low column */
+/* / column footer */
 
 /* / SPOTIFY COLUMN */
+
+
+/* GHOST BAR */
+
+.ghost-bar {
+    width: calc(100vw - 270px);
+    height: 80px;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ghost-bar .upgrade {
+    width: 250px;
+    height: 40px;
+    padding: 10px 30px;
+    margin-right: 40px;
+    border: 1px solid white;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+}
+/* / GHOST BAR */
+
+
+/* NAV ALBUMS */
+
+#nav-albums {
+    width: calc(100vw - 270px);
+    height: 70px;
+    margin-bottom: 80px;
+    background-color: #323D4F;
+}
+
+#nav-albums ul {
+    height: 70px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-albums ul li {
+    padding: 10px;
+    height: 70px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightgrey;
+}
+
+/* / NAV ALBUMS */
+
+
+/* ALBUMS' CONT ATTRIBUTES */
+
+.margin-albums-cont {
+    margin-top: 80px; 
+}
+
+h1 {
+    margin-left: 37px;
+    color: white;
+}
+
+h1:nth-of-type(2),
+h1:nth-of-type(3) {
+    margin-top: 50px;
+}
+
+h3 {
+    margin-top: 10px;
+    color: white;
+}
+
+p {
+    margin-top: 5px;
+    color: lightgrey;
+}
+
+.paragraph {
+    margin-top: 10px;
+    margin-left: 37px;
+    color: lightgrey;
+}
+
+.flex-albums-cont {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-albums-cont.second {
+    margin-top: 20px;
+    margin-left: 37px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.flex-albums-cont.second .album-wrap:last-child {
+    margin-left: 75px;
+}
+
+.flex-albums-cont.third {
+    margin-top: 20px;
+    margin-left: 37px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.flex-albums-cont.third .album-wrap:last-child {
+    margin-left: 75px;
+}
+
+.flex-albums-cont .album-wrap .album {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+}
+
+.flex-albums-cont .album-wrap .album img {
+    width: 100%;
+}
+
+.flex-albums-cont .album-wrap .album-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ALBUMS' CONT ATTRIBUTES */
 
 
 /* FOOTER */
