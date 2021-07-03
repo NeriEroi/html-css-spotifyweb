@@ -23,6 +23,7 @@ body {
     background-color: #000000;
     float: left;
     position: fixed;
+    position: relative;
 }
 
 .albums-cont {
@@ -107,51 +108,52 @@ footer {
 
 /* column footer */
 
-#nav-column .column-footer {
-    margin-top: 220px;
-    margin-left: 10px;
+.column-spotify .column-footer {
+    width: 230px;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
 }
 
-#nav-column .column-footer .install {
+.column-spotify .column-footer .install {
     height: 35px;
     display: flex;
 }
 
-#nav-column .column-footer .logo-footer {
+.column-spotify .column-footer .logo-footer {
     width: 30px;
 }
 
-#nav-column .column-footer .logo-footer img {
+.column-spotify .column-footer .logo-footer img {
     width: 100%;
 }
 
-#nav-column .column-footer .install p {
+.column-spotify .column-footer .install p {
     margin-left: 10px;
 }
 
 hr {
-    width: 80%;
     margin-left: 5px;
 }
 
-#nav-column .column-footer .doe {
+.column-spotify .column-footer .doe {
     height: 50px;
     margin-top: 10px;
     margin-left: 5px;
     display: flex;
 }
 
-#nav-column .column-footer .logo-footer-doe {
+.column-spotify .column-footer .logo-footer-doe {
     width: 20px;
 }
 
-#nav-column .column-footer .logo-footer-doe img {
+.column-spotify .column-footer .logo-footer-doe img {
     width: 100%;
     border: 1px solid white;
     border-radius: 50%;
 }
 
-#nav-column .column-footer .doe p {
+.column-spotify .column-footer .doe p {
     margin-left: 10px;
 }
 
