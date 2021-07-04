@@ -299,7 +299,36 @@ p {
     width: 200px;
     height: 200px;
     background-color: lightblue;
+    position: relative;
 }
+
+/* overlay */
+
+.flex-albums-cont .album-wrap .album .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    display: none;
+}
+
+.flex-albums-cont .album-wrap .album .overlay i {
+    font-size: 80px;
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    transform: translate(-50%, -50%);
+}
+
+.flex-albums-cont .album-wrap .album:hover .overlay {
+    display: block;
+}
+
+/* / overlay */
 
 .flex-albums-cont .album-wrap .album img {
     width: 100%;
