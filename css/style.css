@@ -94,8 +94,18 @@ footer {
     color: lightgrey;
 }
 
+#nav-column ul li:hover {
+    color: white;
+    cursor: pointer;
+}
+
 #nav-column ul li span {
     margin-left: 5px;
+}
+
+#nav-column ul li:hover span {
+    color: white;
+    cursor: pointer;
 }
 
 #nav-column ul li .icon-cont {
@@ -130,6 +140,11 @@ footer {
 
 .column-spotify .column-footer .install p {
     margin-left: 10px;
+}
+
+.column-spotify .column-footer .install p:hover {
+    color: white;
+    cursor: pointer;
 }
 
 hr {
@@ -214,6 +229,11 @@ hr {
     align-items: center;
     color: lightgrey;
     position: relative;
+}
+
+#nav-albums ul li:hover {
+    color: white;
+    cursor: pointer;
 }
 
 #nav-albums ul li .green-line {
@@ -326,6 +346,7 @@ p {
 
 .flex-albums-cont .album-wrap .album:hover .overlay {
     display: block;
+    cursor: pointer;
 }
 
 /* / overlay */
