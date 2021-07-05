@@ -45,7 +45,7 @@ footer {
     position: fixed;
 }
 
-/*  /STRUCTURE */
+/*  / STRUCTURE */
 
 
 /* SPOTIFY COLUMN */
@@ -55,10 +55,20 @@ footer {
     height: 75px;
     margin-top: 10px;
     margin-left: 10px;
+    position: relative;
 }
 
 .logo img {
     width: 100%;
+}
+
+.logo img:last-child {
+    width: 150px;
+    height: 55px;
+    padding-right: 80px;
+    position: absolute;
+    left: 0;
+    display: none;
 }
 
 #nav-column ul {
@@ -123,6 +133,7 @@ footer {
     position: absolute;
     left: 10px;
     bottom: 0;
+    background-color: black;
 }
 
 .column-spotify .column-footer .install {
@@ -173,6 +184,22 @@ hr {
 }
 
 /* / column footer */
+
+/* MEDIA QUERY SPOTIFY COLUMN */
+
+@media screen and (max-width: 1180px) {
+
+    .logo img:first-child {
+        display: none;
+    }
+
+    .logo img:last-child {
+        display: block;
+    }
+
+}
+
+/* / MEDIA QUERY SPOTIFY COLUMN */
 
 /* / SPOTIFY COLUMN */
 
@@ -528,3 +555,55 @@ footer .row .footer-item-center {
 /* / footer item center */
 
 /* / FOOTER */
+
+
+/* MEDIA QUERY FOOTER */
+
+@media screen and (max-width: 1180px) {
+
+    footer .row .footer-item {
+        width: 35%;
+        height: 125px;
+        background-color: #282828;
+    }
+    
+    footer .row .footer-item-center {
+        width: 30%;
+        height: 125px;
+        background-color: #282828;
+    }
+
+    .row .footer-item-center .slide-bar {
+        width: 100px;
+        height: 5px;
+        margin: 0 50px 0 50px;
+        background-color: grey;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 1181px) and (max-width: 1639px) {
+    footer .row .footer-item {
+        width: 30%;
+        height: 125px;
+        background-color: #282828;
+    }
+    
+    footer .row .footer-item-center {
+        width: 40%;
+        height: 125px;
+        background-color: #282828;
+    }
+
+    .row .footer-item-center .slide-bar {
+        width: 300px;
+        height: 5px;
+        margin: 0 50px 0 50px;
+        background-color: grey;
+        border-radius: 10px;
+    }
+}
+
+/* / MEDIA QUERY FOOTER */
+
+    
