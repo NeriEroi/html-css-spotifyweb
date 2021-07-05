@@ -242,6 +242,16 @@ hr {
 /* / GHOST BAR */
 
 
+/* MEDIA QUERY GHOST BAR */
+
+@media screen and (max-height: 755px) {
+    .ghost-bar {
+        display: none;
+    }
+}
+
+/* MEDIA QUERY GHOST BAR */
+
 /* NAV ALBUMS */
 
 #nav-albums {
