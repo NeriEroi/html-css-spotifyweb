@@ -35,7 +35,8 @@ body {
     background-color: #000000;
     float: left;
     position: fixed;
-    position: relative;
+    /* position: relative; */
+    overflow-y: auto;
 }
 
 .albums-cont {
@@ -142,9 +143,11 @@ footer {
 
 .column-spotify .column-footer {
     width: 230px;
-    position: absolute;
+    /* position: absolute;
     left: 10px;
-    bottom: 0;
+    bottom: 0; */
+    position: relative;
+    top: 210px;
     background-color: black;
 }
 
