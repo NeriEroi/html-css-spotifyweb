@@ -15,6 +15,18 @@ body {
     height: 100vh;
     background-color: lightgreen;
     position: relative;
+    animation-name: cont;
+    animation-duration: 3s;
+}
+
+@keyframes cont {
+    0% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: none;
+    }
 }
 
 .column-spotify {
