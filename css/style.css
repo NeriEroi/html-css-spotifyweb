@@ -468,6 +468,13 @@ footer .row .footer-item-center {
     color: lightgray;
 }
 
+.row .footer-item.left .heart-folder-cont .fa-heart:hover,
+.row .footer-item.left .heart-folder-cont .fa-folder:hover {
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
+}
+
 .row .footer-item.left .heart-folder-cont i:last-child {
     margin-right: 100px;
     font-size: 20px;
@@ -497,6 +504,12 @@ footer .row .footer-item-center {
     font-size: 20px;
 }
 
+.row .footer-item.right .align-tv-cont i:hover {
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
+}
+
 .row .footer-item.right .align-tv-cont i:last-child {
     padding: 20px;
 }
@@ -504,6 +517,12 @@ footer .row .footer-item-center {
 .row .footer-item.right .audio-bar {
     display: flex;
     align-items: center;
+}
+
+.row .footer-item.right .audio-bar i:hover {
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
 }
 
 .row .footer-item.right .audio-bar i,
@@ -540,6 +559,17 @@ footer .row .footer-item-center {
 .row .footer-item-center .buttons-cont i {
     font-size: 25px;
     color: white;
+}
+
+.row .footer-item-center .buttons-cont i:hover {
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+}
+
+.row .footer-item-center .buttons-cont i:first-child:hover,
+.row .footer-item-center .buttons-cont i:last-child:hover {
+    font-size: 28px;
 }
 
 .row .footer-item-center .buttons-cont i:nth-child(3) {
